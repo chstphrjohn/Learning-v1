@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="<?php echo Localization::activeLanguage() ?>">
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+
+    <!--Write a function that combines two lists by alternatingly taking elements. -->
+    <!--For example: given the two lists [a, b, c] and [1, 2, 3], -->
+    <!--the function should return [a, 1, b, 2, c, 3].-->
+
+    <script>
+        var listA = ['a,b,c,d'];
+        var listB = ['1,2,3,4'];
+        var fullList = listA.concat(listB);
+
+        function combineLists(listA, listB){
+
+            //write value of total into string and display on screen
+            document.write(fullList);
+        }
+
+        combineLists(listA, listB);
+
+    </script>
+
+</head>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="<?php echo Localization::activeLanguage() ?>">
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+
+    <!--Write three functions that compute the sum of the numbers in a given list using a-->
+    <!--for-loop, a while-loop, and recursion.-->
+
+    <script>
+        // define the array and objects in the array
+        var list = [1,2,3,4];
+        // set value of total to be 0
+        var total = 0;
+        // set value of count to be 0
+        var i = 0;
+
+        //create the function and name it sum - set var list as the params for it
+        function sumFor(list){
+            // run through each object in the array - starting count at 0 adding 1 to the count each loop until
+            // the count is larger than the length of the array
+            for(i = 0; i < list.length ; i++){
+                //set that everytime loop runs add the value of object in position 'i' of the array to total
+                total = total + list[i];
+            }
+            //write value of total into string and display on screen
+            document.write(total + " is the total sumFOR");
+        }
+        //calls function and passes the var list into the params of the function - required
+        sumFor(list);
+
+        document.write('<br/>');
+
+        function sumWhile(list){
+            //set paramater for function to run only 'while' this is true
+            while(i < list.length){
+                // set total to 0 from variable and then add value of list element each time the while
+                // loop runs
+                total = total + list[i];
+                i++;
+            }
+
+            //write value of total into string and display on screen
+            document.write(total + " is the total sumWhile");
+        }
+        sumWhile(list);
+
+        document.write('<br/>');
+
+//        function sumRecursion(list){
+//
+//            if(list.length === 0){
+//                return 0;
+//            }
+//
+//
+//            //write value of total into string and display on screen
+//            document.write(total + " is the total sumRecursion");
+//        }
+//
+//        sumRecursion(list);
+
+    </script>
+
+</head>
+</html>

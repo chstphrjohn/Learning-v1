@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="<?php echo Localization::activeLanguage() ?>">
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+
+    <!--Write a function that computes the list of the first 100 Fibonacci numbers. -->
+    <!--By definition, the first two numbers in the Fibonacci sequence are 0 and 1, -->
+    <!--and each subsequent number is the sum of the previous two. -->
+    <!--As an example, here are the first 10 Fibonnaci numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, and 34.-->
+
+    <script>
+    //        a=0;
+//        b=1;
+//        c = a+b;
+//
+//        loop
+//
+//        a2 = b + c;
+//        b2 = c + a2;
+//        c2 = a2 + b2;
+//
+//        loop
+//
+//        a3 = b2 + c2;
+//        b3 = c2 + a3;
+//        c3 = a3 + b3;
+//
+//        etc
+
+        var list = [''];
+
+        function Fibonnaci(){
+            var a = 0;
+            var b = 1;
+            var c = a + b;
+
+            for(i=0; i < 100; i++){
+                list.push(a,b);
+            }
+            console.log(list);
+        }
+        Fibonnaci();
+
+    </script>
+
+</head>
+</html>
